@@ -1,0 +1,44 @@
+ //primera aleta de arriba
+      rect(52, 50, aletaLargo, aletaAlto)    
+      //segunda aleta de arriba      
+      rect(52 + largo, 50, aletaAncho, aletaAlto)
+      //tercera aleta arriba
+      rect(52 + largo + ancho, 50 , aletaLargo, aletaAlto)
+      //cuarta aleta arriba
+      rect(52 + largo + ancho + largo, 50, aletaAncho, aletaAlto)
+      //primera cara
+      rect(50, 50 + aletaAlto, largo, alto)
+      //segunda cara
+      rect(50 + largo, 50 + aletaAlto, ancho, alto)
+      //tercera cara
+      rect(50 + largo + ancho, 50 + aletaAlto, largo, alto)
+      //cuarta cara
+      rect(50 + largo + ancho + largo, 50 + aletaAlto, ancho, alto)
+      // primera/seg/tercera/cuarta aleta de abajo
+      rect(52, 50 + aletaAlto + alto, aletaLargo, aletaAlto)
+      rect(52 + largo, 50 + aletaAlto + alto, aletaAncho, aletaAlto)
+      rect(52 + largo + ancho, 50 + aletaAlto + alto, aletaLargo, aletaAlto)
+      rect(52 + largo + ancho + largo, 50 + aletaAlto + alto, aletaAncho, aletaAlto)
+        
+      fill('black')
+      strokeWeight(1)
+      textSize(20);
+      text('Plano Standart a escala', 150, 30);
+      //color kraft
+      fill( 186, 138, 91 )
+
+
+
+let largoOrig = Number(num)
+let anchoOrig = 300
+let altoorig = 200
+
+let largo = Number(num) * 0.5
+let ancho = anchoOrig * 0.5
+let alto = altoorig * 0.5
+let aletaAlto = ancho/2
+let aletaLargo = largo - 5
+let aletaAncho = ancho - 5
+let largoCanvas = 2 * largo + 2 * ancho + 100
+let anchoCanvas = ancho + alto + 100
+//Input
